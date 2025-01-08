@@ -12,6 +12,36 @@ script that flattens your codebase into a single text file with a tree view and 
     - Common media file extensions (.png, .jpg, .gif, etc.)
 run : `node ./flatcode.js <project_name> [root_directory]`
 
+### clean_node_module.js
+Script that recursively removes all node_modules directories within a specified root folder. This is helpful if you have multiple Node.js projects nested under one directory and you want to clean them up to free disk space or avoid conflicts.
+
+Usage:
+
+```bash
+node ./clean_node_module.js <path_to_Projects>
+```
+For example, if your directory structure is:
+
+
+```bash
+Projects
+|-- Project1
+|   `-- node_modules
+|-- Project2
+|   `-- node_modules
+`-- Project3
+    `-- node_modules
+```
+
+Run:
+
+```bash
+node ./clean_node_module.js ./Projects
+```
+This will recursively find and remove every node_modules folder under Projects.
+
+Note: Make sure you have permissions to remove the directories. Use with caution since this cannot be undone.
+
 
 # Getting Started
 Clone this repository (or download the code directly):

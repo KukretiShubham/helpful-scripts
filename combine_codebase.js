@@ -159,11 +159,13 @@ function combineCodebaseWithLineLimit(projectName, rootDir) {
     "scripts",
     ".env",
     "yarn.lock",
+    "package-lock.json",
     "assets",
     "README.md",
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE.md",
+    "bun.lockb",
   ];
 
   const filePaths = gatherFilePaths(rootDir, ignoreList);
